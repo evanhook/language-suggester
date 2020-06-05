@@ -7,16 +7,15 @@ $(document).ready(function(){
     const beverage = parseInt($("input:radio[name=beverage]:checked").val());
     const totalValue = excitement + workLocation + companyWork + laptop + beverage
 
-    if (totalValue >=13) {
+    if (totalValue >= 13) {
       $("#resultC").removeClass("hidden");
-      $("resultRuby, #resultSwift").addClass("hidden");
-      console.log(showresult);
+      $("#resultRuby, #resultSwift").addClass("hidden");
     } else if (totalValue < 13, totalValue >= 8) {
       $("#resultRuby").removeClass("hidden");
-      $("resultC, #resultSwift").addClass("hidden");
+      $("#resultC, #resultSwift").addClass("hidden");
     } else {
       $("#resultSwift").removeClass("hidden");
-      $("resultRuby, #resultC").addClass("hidden");
+      $("#resultC, #resultRuby").addClass("hidden");
     }
     event.preventDefault();
   });
