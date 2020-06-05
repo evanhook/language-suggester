@@ -1,19 +1,22 @@
-/*#langResult {
-  display: none;
-};
+body {
+  background-color: #f4eeff;
+  color: #424874;
+}
 
-#resultSwift {
-  display: none;
-};
+.jumbotron {
+  background-color: #424874;
+  color: #a6b1e1;
+}
 
-#resultRuby {
-  display: none;
-};
+button {
+  background-color: #424874;
+  color: #a6b1e1;
+  border-radius: 12px;
+  margin: 20px;
+}
 
-#resultC {
-  display: none;
-};
-*/
 .well {
   display:none;
+  background-color: white;
+  color: #424874;
 }
