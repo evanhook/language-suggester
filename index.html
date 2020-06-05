@@ -11,88 +11,92 @@
   </head>
   <body>
     <div class="container">
-        <div class="jumbotron">
-          <h1>Programming Language Quiz</h1>
-          <p> Many people want to know what the "best" langage to learn is when they are starting their coding journey. While there isn't one right answer, this quiz will guide you in the direction of where you can start. It's important to remember that you will likely learn more than just one language and that coding is all about learning, researching, and adapting!</p>
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="index.html">Quiz</a></li>
+        <li role="presentation"><a href="resources.html">Resources</a></li>
+      </ul>
+      <div class="jumbotron">
+        <h1>Programming Language Quiz</h1>
+        <p> Many people want to know what the "best" langage to learn is when they are starting their coding journey. While there isn't one right answer, this quiz will guide you in the direction of where you can start. It's important to remember that you will likely learn more than just one language and that coding is all about learning, researching, and adapting!</p>
+      </div>
+      <div class="col-md-6">
+      <form id="languageQuiz">
+        <h4>How excited are you to learn a new language?</h4>
+        <div class="radio">
+          <label>
+            <input type="radio" name="excitement" value="1" checked>
+            Excited
+          </label>
         </div>
-        <div class="col-md-6">
-        <form id="languageQuiz">
-          <h4>How excited are you to learn a new language?</h4>
-          <div class="radio">
-            <label>
-              <input type="radio" name="excitement" value="1" checked>
-              Excited
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="excitement" value="2">
-              Very Excited
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="excitement" value="3">
-              VERY, VERY EXCITED!
-            </label>
-          </div>
-          <h4>If you could work anywhere, where would it be?</h4>
-          <div class="radio">
-            <label>
-              <input type="radio" name="workLocation" value="1" checked>
-              In a cabin that overlooks the forest
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="workLocation" value="2">
-              On a rooftop patio that overlooks the city
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="workLocation" value="3">
-              At a beach house that overlooks the ocean
-            </label>
-          </div>
-          <h4>Which of the following companies would you want to work at?</h4>
-          <div class="radio">
-            <label>
-              <input type="radio" name="companyWork" value="1" checked>
-              Slack
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="companyWork" value="2">
-              Github
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="companyWork" value="3">
-              Intuit
-            </label>
-          </div>
-          <h4>What kind of laptop would you use to code?</h4>
-          <div class="radio">
-            <label>
-              <input type="radio" name="laptop" value="1" checked>
-              Google Chromebook
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="laptop" value="2">
-              Macbook Pro
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="laptop" value="3">
-              Microsoft Surface
-            </label>
-          </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="excitement" value="2">
+            Very Excited
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="excitement" value="3">
+            VERY, VERY EXCITED!
+          </label>
+        </div>
+        <h4>If you could work anywhere, where would it be?</h4>
+        <div class="radio">
+          <label>
+            <input type="radio" name="workLocation" value="1" checked>
+            In a cabin that overlooks the forest
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="workLocation" value="2">
+            On a rooftop patio that overlooks the city
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="workLocation" value="3">
+            At a beach house that overlooks the ocean
+          </label>
+        </div>
+        <h4>Which of the following companies would you want to work at?</h4>
+        <div class="radio">
+          <label>
+            <input type="radio" name="companyWork" value="1" checked>
+            Slack
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="companyWork" value="2">
+            Github
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="companyWork" value="3">
+            Intuit
+          </label>
+        </div>
+        <h4>What kind of laptop would you use to code?</h4>
+        <div class="radio">
+          <label>
+            <input type="radio" name="laptop" value="1" checked>
+            Google Chromebook
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="laptop" value="2">
+            Macbook Pro
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="laptop" value="3">
+            Microsoft Surface
+          </label>
+        </div>
           <h4>Which beverage would you drink while coding?</h4>
           <div class="radio">
             <label>
