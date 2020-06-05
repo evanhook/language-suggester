@@ -1,3 +1,19 @@
-#langResult {
+/*#langResult {
   display: none;
+};
+
+#resultSwift {
+  display: none;
+};
+
+#resultRuby {
+  display: none;
+};
+
+#resultC {
+  display: none;
+};
+*/
+.well {
+  display:none;
 }
