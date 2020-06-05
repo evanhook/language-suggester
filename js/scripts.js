@@ -1,5 +1,6 @@
 $(document).ready(function(){
   $("form#languageQuiz").submit(function(event){
+    console.log(nameInput);
     const excitement = parseInt($("input:radio[name=excitement]:checked").val());
     const workLocation = parseInt($("input:radio[name=workLocation]:checked").val());
     const companyWork = parseInt($("input:radio[name=companyWork]:checked").val());
@@ -9,10 +10,10 @@ $(document).ready(function(){
 
     if (totalValue >= 13) {
       $("#resultC").removeClass("hidden");
-      $("#resultRuby, #resultSwift").addClass("hidden");
+      $("#resultRuby").addClass("hidden");
     } else if (totalValue < 13, totalValue >= 8) {
       $("#resultRuby").removeClass("hidden");
-      $("#resultC, #resultSwift").addClass("hidden");
+      $("#resultC").addClass("hidden");
     } else {
       $("#resultSwift").removeClass("hidden");
       $("#resultC, #resultRuby").addClass("hidden");
