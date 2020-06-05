@@ -1,17 +1,19 @@
 $(document).ready(function(){
   $("form#languageQuiz").submit(function(event){
-    console.log(nameInput);
     const excitement = parseInt($("input:radio[name=excitement]:checked").val());
     const workLocation = parseInt($("input:radio[name=workLocation]:checked").val());
     const companyWork = parseInt($("input:radio[name=companyWork]:checked").val());
     const laptop = parseInt($("input:radio[name=laptop]:checked").val());
     const beverage = parseInt($("input:radio[name=beverage]:checked").val());
-    const totalValue = excitement + workLocation + companyWork + laptop + beverage
+    const job = parseInt($("input:radio[name=job]:checked").val());
+    const motivation = parseInt($("input:radio[name=motivation]:checked").val());
 
-    if (totalValue >= 13) {
+    const totalValue = excitement + workLocation + companyWork + laptop + beverage + job + motivation
+
+    if (totalValue >= 18) {
       $("#resultC").removeClass("hidden");
       $("#resultRuby").addClass("hidden");
-    } else if (totalValue < 13, totalValue >= 8) {
+    } else if (totalValue < 18, totalValue >= 12) {
       $("#resultRuby").removeClass("hidden");
       $("#resultC").addClass("hidden");
     } else {
