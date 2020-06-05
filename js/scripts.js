@@ -8,12 +8,15 @@ $(document).ready(function(){
     const totalValue = excitement + workLocation + companyWork + laptop + beverage
 
     if (totalValue >=13) {
-      //$("#langResult").show();
-      $("#resultC").show();
+      $("#resultC").removeClass("hidden");
+      $("resultRuby, #resultSwift").addClass("hidden");
+      console.log(showresult);
     } else if (totalValue < 13, totalValue >= 8) {
-      $("#resultRuby").show();
+      $("#resultRuby").removeClass("hidden");
+      $("resultC, #resultSwift").addClass("hidden");
     } else {
-      $("#resultSwift").show();
+      $("#resultSwift").removeClass("hidden");
+      $("resultRuby, #resultC").addClass("hidden");
     }
     event.preventDefault();
   });

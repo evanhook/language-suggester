@@ -15,7 +15,7 @@ button {
   margin: 20px;
 }
 
-.well {
+.hidden {
   display:none;
   background-color: white;
   color: #424874;
