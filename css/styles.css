@@ -21,3 +21,12 @@ button {
   color: #424874;
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border: 5px solid #424874;
+  padding: 10px;
+  margin-bottom: 15px;
+}

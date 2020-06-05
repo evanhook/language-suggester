@@ -12,10 +12,10 @@ $(document).ready(function(){
 
     if (totalValue >= 18) {
       $("#resultC").removeClass("hidden");
-      $("#resultRuby").addClass("hidden");
-    } else if (totalValue < 18, totalValue >= 12) {
+      $("#resultRuby, #resultSwift").addClass("hidden");
+    } else if (totalValue < 18 && totalValue > 12) {
       $("#resultRuby").removeClass("hidden");
-      $("#resultC").addClass("hidden");
+      $("#resultC, #resultSwift").addClass("hidden");
     } else {
       $("#resultSwift").removeClass("hidden");
       $("#resultC, #resultRuby").addClass("hidden");

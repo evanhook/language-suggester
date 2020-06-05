@@ -11,160 +11,161 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
-        <h1>Programming Language Quiz</h1>
-        <p> Many people want to know what the "best" langage to learn is when they are starting their coding journey. While there isn't one right answer, this quiz will guide you in the direction of where you can start. It's important to remember that you will likely learn more than just one language and that coding is all about learning, researching, and adapting!</p>
+        <div class="jumbotron">
+          <h1>Programming Language Quiz</h1>
+          <p> Many people want to know what the "best" langage to learn is when they are starting their coding journey. While there isn't one right answer, this quiz will guide you in the direction of where you can start. It's important to remember that you will likely learn more than just one language and that coding is all about learning, researching, and adapting!</p>
+        </div>
+        <div class="col-md-6">
+        <form id="languageQuiz">
+          <h4>How excited are you to learn a new language?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="excitement" value="1" checked>
+              Excited
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="excitement" value="2">
+              Very Excited
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="excitement" value="3">
+              VERY, VERY EXCITED!
+            </label>
+          </div>
+          <h4>If you could work anywhere, where would it be?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="workLocation" value="1" checked>
+              In a cabin that overlooks the forest
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="workLocation" value="2">
+              On a rooftop patio that overlooks the city
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="workLocation" value="3">
+              At a beach house that overlooks the ocean
+            </label>
+          </div>
+          <h4>Which of the following companies would you want to work at?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="companyWork" value="1" checked>
+              Slack
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="companyWork" value="2">
+              Github
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="companyWork" value="3">
+              Intuit
+            </label>
+          </div>
+          <h4>What kind of laptop would you use to code?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="laptop" value="1" checked>
+              Google Chromebook
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="laptop" value="2">
+              Macbook Pro
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="laptop" value="3">
+              Microsoft Surface
+            </label>
+          </div>
+          <h4>Which beverage would you drink while coding?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="beverage" value="1" checked>
+              Sparkling water
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="beverage" value="2">
+              Tea
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="beverage" value="3">
+              Coffee
+            </label>
+          </div>
+          <h4>Which job are you most interested in?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="job" value="1" checked>
+             Front end development
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="job" value="2">
+              Back end development 
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="job" value="3">
+              Product management
+            </label>
+          </div>
+          <h4>Which of the following is most motivational to you?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="motivation" value="1" checked>
+              A lifetime of learning new things
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="motivation" value="2">
+              The freedom to work remotely
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="motivation" value="3">
+              Making more money
+            </label>
+          </div>
+          <button type="submit"><h3>FIND OUT NOW</h3></button>
+        </form>
       </div>
-      <form id="languageQuiz">
-        <h4>How excited are you to learn a new language?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="excitement" value="1" checked>
-            Excited
-          </label>
+      <div id="quizResults">
+        <div class="hidden" id="resultSwift">
+          <img src="photos/swift-logo.png" alt="Swift logo of a bird on an orange background next to Swift text">
+          <p>Swift is a powerful and intuitive programming language for macOS, iOS, watchOS, tvOS and beyond. Writing Swift code is interactive and fun, the syntax is concise yet expressive, and Swift includes modern features developers love. Swift code is safe by design, yet also produces software that runs lightning-fast. Learn more about Swift <a href="https://developer.apple.com/swift/">here!</a></p>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="excitement" value="2">
-            Very Excited
-          </label>
+        <div class="hidden" id="resultRuby">
+          <img src="photos/Ruby-logo.png" alt="Ruby logo next to Ruby text" display="none">
+          <p>A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. Learn more about Ruby <a href="https://www.ruby-lang.org/en/">here!</a></p>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="excitement" value="3">
-            VERY, VERY EXCITED!
-          </label>
+        <div class="hidden" id="resultC">
+          <img src="photos/CSharp-logo.png" alt="C# logo with white text on a purple hexagon background">
+          <p>C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run on the .NET Framework. You can use C# to create Windows client applications, XML Web services, distributed components, client-server applications, database applications, and much, much more. To learn more, click <a href="https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework">here!</a></p>
         </div>
-        <h4>If you could work anywhere, where would it be?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="workLocation" value="1" checked>
-            In a cabin that overlooks the forest
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="workLocation" value="2">
-            On a rooftop patio that overlooks the city
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="workLocation" value="3">
-            At a beach house that overlooks the ocean
-          </label>
-        </div>
-        <h4>Which of the following companies would you want to work at?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="companyWork" value="1" checked>
-            Slack
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="companyWork" value="2">
-            Github
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="companyWork" value="3">
-            Intuit
-          </label>
-        </div>
-        <h4>What kind of laptop would you use to code?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="laptop" value="1" checked>
-            Google Chromebook
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="laptop" value="2">
-            Macbook Pro
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="laptop" value="3">
-            Microsoft Surface
-          </label>
-        </div>
-        <h4>Which beverage would you drink while coding?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="beverage" value="1" checked>
-            Sparkling water
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="beverage" value="2">
-            Tea
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="beverage" value="3">
-            Coffee
-          </label>
-        </div>
-        <h4>Which job are you most interested in?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="job" value="1" checked>
-           Front end development
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="job" value="2">
-            Back end development 
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="job" value="3">
-            Product management
-          </label>
-        </div>
-        <h4>Which of the following is most motivational to you?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="motivation" value="1" checked>
-            A lifetime of learning new things
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="motivation" value="2">
-            The freedom to work remotely
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="motivation" value="3">
-            Making more money
-          </label>
-        </div>
-        <button type="submit"><h3>FIND OUT NOW</h3></button>
-      </form>
-      <div class="hidden" id="resultSwift">
-        <img src="photos/swift-logo.png" alt="Swift logo of a bird on an orange background next to Swift text">
-        <h4>SWIFT</h4>
-        <p>Swift is a powerful and intuitive programming language for macOS, iOS, watchOS, tvOS and beyond. Writing Swift code is interactive and fun, the syntax is concise yet expressive, and Swift includes modern features developers love. Swift code is safe by design, yet also produces software that runs lightning-fast. Learn more about Swift <a href="https://developer.apple.com/swift/">here!</a></p>
-      </div>
-      <div class="hidden" id="resultRuby">
-        <img src="photos/Ruby-logo.png" alt="Ruby logo next to Ruby text" display="none">
-        <h4>RUBY</h4>
-        <p>A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. Learn more about Ruby <a href="https://www.ruby-lang.org/en/">here!</a></p>
-      </div>
-      <div class="hidden" id="resultC">
-        <img src="photos/CSharp-logo.png" alt="C# logo with white text on a purple hexagon background">
-        <h4>C#</h4>
-        <p>C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run on the .NET Framework. You can use C# to create Windows client applications, XML Web services, distributed components, client-server applications, database applications, and much, much more. To learn more, click <a href="https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework">here!</a></p>
       </div>
     </div>
   </body>
